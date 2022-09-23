@@ -11,6 +11,10 @@ $color-title: #000000;
 $color-text: #323232;
 $color-text-btn: #FFFFFF;
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;

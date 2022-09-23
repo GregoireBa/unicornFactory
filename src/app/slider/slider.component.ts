@@ -45,6 +45,7 @@ export class SliderComponent implements OnInit {
 
   constructor(private _unicornsService: UnicornsService) { }
 
+
   ngOnInit() {
     this.getUnicornList();
   }
