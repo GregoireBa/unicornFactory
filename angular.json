@@ -122,6 +122,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "unicorn:build:production",
+            "firebaseProject": "unicornfactory-28b2a",
+            "firebaseHostingSite": "unicornfactory-28b2a"
+          }
         }
       }
     }

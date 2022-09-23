@@ -14,21 +14,16 @@ export class UnicornsService {
   /* Add Unicorn */
   AddUnicorn(unicorn: Unicorn) {
     return new Promise<any>((resolve, reject) => {
-      this.firestore.collection("unicornfactory").add(unicorn)
+      this.firestore.collection('unicornfactory-28b2a').add(unicorn)
         .then(res => {
           resolve(res);
         }, err => reject(err));
     });
   }
 
-  // /* Get Unicorn */
-  GetUnicorn(id: string) {
-    return this.firestore.collection("unicornfactory").doc(id).snapshotChanges();
-  }
-
   /* Get Unicorn list */
   GetUnicornList() {
-    return this.firestore.collection("unicornfactory").snapshotChanges();
+    return this.firestore.collection('unicornfactory-28b2a', ref => ref.orderBy('age', "desc")).snapshotChanges();
   }
 
 

@@ -8,7 +8,9 @@ import { FormGroup, FormControl, Validators, NgForm } from "@angular/forms";
   styleUrls: ['./form-factory.component.scss']
 })
 export class FormFactoryComponent implements OnInit {
+
   addUnicornForm: FormGroup;
+
   constructor(
     private _unicornService: UnicornsService,
   ) { }
@@ -18,7 +20,7 @@ export class FormFactoryComponent implements OnInit {
       name: new FormControl(null, [Validators.required, Validators.maxLength(200)]),
       color: new FormControl(null, [Validators.required, Validators.maxLength(7)]),
       gender: new FormControl(null, [Validators.required, Validators.maxLength(200)]),
-      age: new FormControl(null, [Validators.required, Validators.maxLength(200)]),
+      age: new FormControl(null, [Validators.required, Validators.maxLength(3), Validators.max(100)]),
     })
   }
 

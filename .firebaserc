@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "unicornfactory-28b2a": {
+      "hosting": {
+        "unicorn": [
+          "unicornfactory-28b2a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "unicornfactory-28b2a"
+  }
+}
