@@ -1,0 +1,270 @@
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+@import "~swiper/css/navigation";
+
+// COLOR PALET UNICORN
+
+$bg-btn-global: #545657;
+$bg-btn-hover: #545657dd;
+$bg-box-global: #E2EBF0;
+$color-title: #000000;
+$color-text: #323232;
+$color-text-btn: #FFFFFF;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    background: linear-gradient(35deg, #196c6c, #ffcccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-slider {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+// HEADER
+
+.HeaderMenu {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+.logo {
+    width: 232px;
+}
+
+.btn-menu {
+    background: $bg-btn-global;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 7px 18px;
+    font-size: 12px;
+    transition: all 0.3s;
+}
+
+.btn-menu:hover {
+    background: $bg-btn-hover;
+    cursor: pointer;
+}
+
+// SLIDER UNICORN
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.test-dd {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 30px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.global-box-slider {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.box-slider {
+
+    height: 550px;
+    background-color: $bg-box-global;
+    border-radius: 30px;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.fa-unicorn {
+    font-size: 150px;
+}
+
+.container-card-info {
+    background-color: #e2eeff;
+    margin: 5px 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.name-card {
+    background: linear-gradient(35deg, #196c6c, #ffcccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+// FACTORY
+
+.global-box-factory {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.global-box-factory p {
+    font-size: 20px;
+}
+
+.box-left-factory {
+    width: 40%;
+    max-width: 400px;
+}
+
+.target-factory {
+    max-width: 150px;
+    background-color: $bg-btn-global;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 15px auto;
+    text-align: center;
+    color: $color-text-btn;
+}
+
+.target-factory .fa-arrow-right {
+    color: $color-text-btn;
+    margin: 0 5px;
+}
+
+.box-right-factory {
+    width: 60%;
+    min-width: 400px;
+    background-color: $bg-box-global;
+    border-radius: 30px;
+}
+
+.icon-factory {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+}
+
+.fa-farm {
+    font-size: 35px;
+}
+
+// FORM FACTORY
+.box-form-factory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formFactory {
+    width: 33%;
+    min-width: 250px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.form-group-btn {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.inputFactory {
+    width: 100%;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $color-text;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.inputColor {
+    width: 100%;
+    height: 50px;
+    border: none;
+
+}
+
+.formSubmit {
+    min-width: 150px;
+    background: $bg-btn-global;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 10px 20px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.formSubmit:hover {
+    background: $bg-btn-hover;
+    cursor: pointer;
+}
+
+.formSubmit:disabled {
+    background-color: rgb(190, 190, 190);
+    cursor: not-allowed;
+}
