@@ -173,16 +173,15 @@ img {
 
 .target-factory {
     max-width: 150px;
-    background-color: $bg-btn-global;
+    background-color: #e2ebf0;
     padding: 10px 20px;
     border-radius: 30px;
     margin: 15px auto;
     text-align: center;
-    color: $color-text-btn;
 }
 
 .target-factory .fa-arrow-right {
-    color: $color-text-btn;
+    color: $color-text;
     margin: 0 5px;
 }
 
